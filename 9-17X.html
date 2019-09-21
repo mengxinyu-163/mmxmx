@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	function person(firstname,lastname){
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.change = function (name){
+
+			this.lastname = name;
+		}
+	}
+	person.prototype.sex="男";
+	var p1 = new person("甜甜","甜心");
+	//p1.change("心心");
+	document.write(p1.lastname,p1.sex)
+
+	function person(school,class,name,sex){
+		this.schoolname=school;
+		this.classname=class;
+		this.name=name;
+		this.sex=sex;
+	}
+	student.prototype.school = "河南职业技术学院";
+	student.prototype.classs = "182";
+	student.prototype.eat = function(){
+		document.write("吃饭");
+	}
+	student.prototype.sleep = function(){
+		document.write("睡觉")
+	}
+
+
+	var stu1 = new student("翠花","男");
+	</script>
+</body>
+</html>
